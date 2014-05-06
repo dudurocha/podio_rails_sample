@@ -1,11 +1,17 @@
-source 'http://rubygems.org'
+
+source 'https://rubygems.org'
 
 gem 'rails'
+group :development do
+  gem 'sqlite3', '1.3.8'
+end
+
+
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 gem 'podio'
 gem 'omniauth-podio'
 
