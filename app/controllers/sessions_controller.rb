@@ -16,8 +16,8 @@ class SessionsController < ApplicationController
   def create_from_app_auth
     Podio.setup(
       :api_url => 'https://api.podio.com',
-      :api_key => ENV['PODIO_CLIENT_ID'],
-      :api_secret => ENV['PODIO_CLIENT_SECRET']
+      :api_key => "criatec2-wcd6fn",
+      :api_secret => "L88GXQWRoXqs5d7pu7xtxPHuYWevhKzAf6QvBdVKXhelCbR6XkOpuAZwVDzCURL2"
     )
 
     Podio.client.authenticate_with_app(params[:app_id], params[:app_token])
